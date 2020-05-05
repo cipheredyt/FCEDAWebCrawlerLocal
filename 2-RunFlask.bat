@@ -1,4 +1,4 @@
 ECHO Starting WebCrawler
-python3 main.py
+python main.py
 ng serve Crawler
 PAUSE

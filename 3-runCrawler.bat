@@ -1,3 +1,3 @@
 ECHO Run Crawler
-python3 RunCrawler.py
+python RunCrawler.py
 PAUSE

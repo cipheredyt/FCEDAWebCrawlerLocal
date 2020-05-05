@@ -3,13 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<button id= "switch" class="btn btn-info" (click)="toggleDisplay();">⟳</button>
+<p><button id= "switch" class="btn btn-info" (click)="toggleDisplay();">⟳</button> Press to switch between keywords and websites.</p>
 <div *ngIf = "!isShow">
 <app-keywords></app-keywords>
+<app-frequency></app-frequency>
 </div>
 <div *ngIf = "isShow">
 <app-websites></app-websites>
-</div>
-<div>
-<app-frequency></app-frequency>
 </div>
