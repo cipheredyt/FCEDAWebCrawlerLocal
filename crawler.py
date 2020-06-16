@@ -56,7 +56,9 @@ class WebCrawler(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            yield scrapy.Request(url, callback=self.parse, dont_filter=True)
+            scheme = "https://"
+            url2 = scheme + url
+            yield scrapy.Request(url2, callback=self.parse, dont_filter=True)
 
     def parse(self, response):
         conn = sqlite3.connect('crawler.db',check_same_thread=False)
